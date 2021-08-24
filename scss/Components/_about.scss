@@ -1,0 +1,88 @@
+@import '../Base/variables';
+@import '../Base/generales';
+
+.about {
+    padding: 20px;
+    margin: 40px 20px;
+    display: flex;
+    justify-content: center;
+    .foto-perfil {
+        background-color: #f7e5e1;
+        width: 25%;
+        border: 15px solid rgba(247, 229, 225, 0.5);
+        display: flex;
+        align-items: center;
+        img {
+            width: map-get($images, cover);}}
+    .texto-sobre-mi {
+        color: #000;
+        background-color: #f7e5e1;
+        width: 50%;
+        padding: 40px;
+        h2 {
+            font: $big-subtitle;
+            margin-bottom: 20px;}
+        p {
+        font: $big-p;
+        line-height: 40px;
+        text-align: justify;}}
+}
+
+@media only screen and (min-width:200px) and (max-width:549px) {
+    .about {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        align-items: center;
+        .foto-perfil {
+            text-align: center;
+            width: 50%;
+            margin: 20px 0;
+            border: none;}
+        .texto-sobre-mi {
+            width: 100%;
+            margin: 20px auto;
+            padding: 0;
+            background-color: #fff;
+            h2 {
+                text-align: center;
+                font: $small-subtitle;}
+            p {
+                font: $small-p;
+                line-height: 30px;
+                width: 100%;}}
+        }
+}
+
+@media only screen and (min-width:550px) and (max-width:769px) {
+    .about {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        align-items: center;
+        width: auto;
+        .foto-perfil {
+            margin-bottom: 20px;
+            width: 40%;
+            border: none;
+            background-color: #fff;}
+        .texto-sobre-mi {
+        width: 90%;
+        margin: 10px auto;
+        p {
+            font: $big-p;
+            line-height: 35px;
+            width: 100%;}}
+        }
+}
+
+@media only screen and (min-width:770px) and (max-width:990px) {
+    .about .foto-perfil {
+        width: 50%;
+        justify-content: center;
+        img {
+            width: map-get($images, cover);}
+        .texto-sobre-mi {
+            width: 50%;}
+        }
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,200&display=swap');
+@keyframes colores {
+   0%{background:#A8B2CC;}
+   25%{background:#576796;}
+   50%{background:#2d344e;}
+   75%{background:#576796;}
+   100%{background:#A8B2CC;}}
+ 
+*{margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;}
+body {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 1rem;}

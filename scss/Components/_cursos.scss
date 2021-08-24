@@ -1,0 +1,152 @@
+@import '../Base/variables';
+@import '../Base/generales';
+@import '../Base/maps';
+@import '../Base/mixins';
+
+.mis-cursos {
+    padding: 20px;
+    margin: 20px 0;
+    color:#000;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    h2 {
+        font: $big-subtitle;
+        text-align: center;
+        margin: 20px 0;}
+    .texto-izquierda {
+        font: $big-p;
+        width: 65%;
+        line-height: 35px;
+        text-align: justify;
+        margin: 0 auto;}
+    .texto-derecha {
+        font: $big-p;
+        width: 100%;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font: $big-h3;
+            color: #000;
+            font-size: 1.2rem;
+            margin-bottom: 10px;}
+        .clases-individuales {
+            padding: 20px;
+            border: 1px solid #000;
+            margin: 40px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 1.5s ease;
+            img {
+                width: map-get($images, tiny);
+                margin-bottom: 10px;}}
+        .clases-grupales {
+            margin: 40px;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 1.5s ease;
+            img {
+                width: map-get($images, tiny);
+                margin-bottom: 10px;}}
+        .clases-individuales:hover, .clases-grupales:hover {
+            background-color:#D6CDCD;
+            @include transform (scale(1.2,1.2));}
+        }
+    .testimonios {
+        margin: 20px;
+        .textoCarousel1 {
+            background-color: #2d344e;
+            @include condicion-testimonios(#2d344e);}
+        .textoCarousel2 {
+            background-color: #576796;
+            @include condicion-testimonios(#576796);}
+        .textoCarousel3 {
+            background-color: #a8b2cc;
+            @include condicion-testimonios(#a8b2cc);}
+        .textoCarousel1, .textoCarousel2, .textoCarousel3 {
+            margin: 40px 0;
+            .testimonio1, .testimonio2, .testimonio3 {
+                height: auto;
+                min-height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                p {
+                    font: $big-p;
+                    text-align: justify;
+                    margin: 0 auto;
+                    line-height: 40px;
+                    font-weight: 300;
+                    padding: 40px 170px;}}}   
+    }
+}
+@media only screen and (min-width:200px) and (max-width:549px) {
+    .mis-cursos {
+        padding: 0;
+        margin: 20px 0;
+        h2 {
+            font: $small-subtitle;}
+        .texto-izquierda {
+            padding: 20px;
+            width: 100%;
+            font: $small-p;
+            line-height: 30px;}
+        .texto-derecha {
+            padding: 20px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            .clases-grupales, .clases-individuales {
+                width: 90%;}
+            h3 {
+                font: $small-subtitle;}
+            p {
+                font: $small-p;}
+            img {
+                width: map-get($images, small);}}
+        .testimonios {
+            width: 100%;
+            .textoCarousel1, .textoCarousel2, .textoCarousel3 {
+                .testimonio1, .testimonio2, .testimonio3 {
+                    min-height: 600px;
+                    p {
+                        font: $small-p;
+                        text-align: center;
+                        margin: 0 auto;
+                        line-height: 30px;
+                        padding: 20px 35px;}}}
+                }
+    }
+}
+@media only screen and (min-width:550px) and (max-width:769px) {
+    .mis-cursos {
+        .texto-izquierda {
+            width: 90%;}
+        .texto-derecha {
+            .clases-grupales, .clases-individuales {
+                width: 50%;}
+            h3 {
+                font: $small-subtitle;}
+            p {
+                font: $small-p;
+                line-height: 30px;}
+            img {
+                width: map-get($images, smaller)} }
+        .testimonios {
+            .textoCarousel1, .textoCarousel2, .textoCarousel3 {
+                .testimonio1, .testimonio2, .testimonio3 {
+                    min-height: 500px;
+                    p {
+                        line-height: 35px;
+                        font: $big-p;
+                        padding: 20px 48px;}}}
+        }    
+    }
+}

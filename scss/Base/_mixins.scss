@@ -1,0 +1,14 @@
+@mixin transform($propiedad) {
+    transform: $propiedad;
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;}
+
+@mixin condicion-testimonios($bg-color){
+    background-color: $bg-color;
+
+    @if $bg-color == #a8b2cc {
+        color: #000;
+    } @else {
+        color: #fff;}
+}

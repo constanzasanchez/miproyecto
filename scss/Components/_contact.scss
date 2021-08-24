@@ -1,0 +1,19 @@
+.contacto {
+    h2 {
+        font: $big-subtitle;
+        text-align: center;
+        margin: 40px 0;}
+    p {
+        font: $big-p;
+        margin: 20px;
+        text-align: center;}
+    form {
+    text-align: center;
+        .btn {
+            font-size: 0.9rem;
+            padding: 10px 20px;
+            text-align: center;}
+        .textarea {
+            height: 100px;
+            text-align:initial;}
+}}

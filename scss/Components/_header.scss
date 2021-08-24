@@ -1,0 +1,23 @@
+header {
+    nav {
+        background-color: #fff;}
+    li {
+        padding: 10px;
+        font-size: 0.9rem;
+        a:hover {
+            text-decoration: underline;}}
+    .navbar-brand {
+        width: 20%;}           
+}
+
+@media only screen and (min-width:200px) and (max-width:549px) {
+    header {
+        .navbar-brand {
+            width: 40%;}
+    }
+}
+@media only screen and (min-width:550px) and (max-width:769px) {
+    header {
+        .navbar-brand {
+            width: 30%;}
+    }}
