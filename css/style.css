@@ -389,7 +389,7 @@ body {
 
 @media only screen and (min-width: 200px) and (max-width: 549px) {
   .mis-cursos {
-    padding: 0;
+    padding: 20px;
     margin: 20px 0; }
     .mis-cursos h2 {
       font: 400 1.5rem "Poppins", sans-serif; }
@@ -486,91 +486,79 @@ body {
     margin: 20px 0; }
   .bonustrack .btn {
     font-size: 1rem; }
-
-.container-grids {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 2% 2%;
-  grid-auto-flow: row;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas: "item1 item2 item3" "item4 item5 item6";
-  margin: 40px 0; }
-
-.item1 {
-  grid-area: item1; }
-
-.item2 {
-  grid-area: item2; }
-
-.item3 {
-  grid-area: item3; }
-
-.item4 {
-  grid-area: item4; }
-
-.item5 {
-  grid-area: item5; }
-
-.item6 {
-  grid-area: item6; }
-
-.englishLevel, .speaking, .vocabulary, .phrasals, .listening, .reading {
-  text-align: center; }
-  .englishLevel a, .speaking a, .vocabulary a, .phrasals a, .listening a, .reading a {
-    text-align: center; }
-    .englishLevel a img, .speaking a img, .vocabulary a img, .phrasals a img, .listening a img, .reading a img {
-      width: 50%; }
-    .englishLevel a img:last-child, .speaking a img:last-child, .vocabulary a img:last-child, .phrasals a img:last-child, .listening a img:last-child, .reading a img:last-child {
-      display: none; }
-  .englishLevel a:hover img:last-child, .speaking a:hover img:last-child, .vocabulary a:hover img:last-child, .phrasals a:hover img:last-child, .listening a:hover img:last-child, .reading a:hover img:last-child {
-    display: block;
-    margin: 0 auto; }
-  .englishLevel a:hover img:first-child, .speaking a:hover img:first-child, .vocabulary a:hover img:first-child, .phrasals a:hover img:first-child, .listening a:hover img:first-child, .reading a:hover img:first-child {
-    display: none; }
-
-@media only screen and (min-width: 200px) and (max-width: 549px) {
-  .bonustrack h2 {
-    margin-bottom: 50px;
-    font: 400 1.5rem "Poppins", sans-serif; }
-
-  .container-grids {
-    width: 100%;
+  .bonustrack .container-grids {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
     gap: 2% 2%;
-    justify-content: center;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
     align-content: space-evenly;
     justify-items: center;
     align-items: center;
-    margin: 80px 0; }
+    grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+    margin: 40px 0; }
+  .bonustrack .item1 {
+    grid-area: item1; }
+  .bonustrack .item2 {
+    grid-area: item2; }
+  .bonustrack .item3 {
+    grid-area: item3; }
+  .bonustrack .item4 {
+    grid-area: item4; }
+  .bonustrack .item5 {
+    grid-area: item5; }
+  .bonustrack .item6 {
+    grid-area: item6; }
+  .bonustrack .englishLevel, .bonustrack .speaking, .bonustrack .vocabulary, .bonustrack .phrasals, .bonustrack .listening, .bonustrack .reading {
+    text-align: center; }
+    .bonustrack .englishLevel a, .bonustrack .speaking a, .bonustrack .vocabulary a, .bonustrack .phrasals a, .bonustrack .listening a, .bonustrack .reading a {
+      text-align: center; }
+      .bonustrack .englishLevel a img, .bonustrack .speaking a img, .bonustrack .vocabulary a img, .bonustrack .phrasals a img, .bonustrack .listening a img, .bonustrack .reading a img {
+        width: 50%; }
+      .bonustrack .englishLevel a img:last-child, .bonustrack .speaking a img:last-child, .bonustrack .vocabulary a img:last-child, .bonustrack .phrasals a img:last-child, .bonustrack .listening a img:last-child, .bonustrack .reading a img:last-child {
+        display: none; }
+    .bonustrack .englishLevel a:hover img:last-child, .bonustrack .speaking a:hover img:last-child, .bonustrack .vocabulary a:hover img:last-child, .bonustrack .phrasals a:hover img:last-child, .bonustrack .listening a:hover img:last-child, .bonustrack .reading a:hover img:last-child {
+      display: block;
+      margin: 0 auto; }
+    .bonustrack .englishLevel a:hover img:first-child, .bonustrack .speaking a:hover img:first-child, .bonustrack .vocabulary a:hover img:first-child, .bonustrack .phrasals a:hover img:first-child, .bonustrack .listening a:hover img:first-child, .bonustrack .reading a:hover img:first-child {
+      display: none; }
 
-  .item1 {
-    grid-area: 1 / 1 / 2 / 2; }
-
-  .item2 {
-    grid-area: 2 / 1 / 3 / 2; }
-
-  .item3 {
-    grid-area: 3 / 1 / 4 / 2; }
-
-  .item4 {
-    grid-area: 4 / 1 / 5 / 2; }
-
-  .item5 {
-    grid-area: 5 / 1 / 6 / 2; }
-
-  .item6 {
-    grid-area: 6 / 1 / 7 / 2; }
-
-  .englishLevel, .speaking, .vocabulary, .phrasals, .listening, .reading {
-    text-align: center; } }
+@media only screen and (min-width: 200px) and (max-width: 549px) {
+  .bonustrack {
+    padding: 50px 0; }
+    .bonustrack h2 {
+      margin: 0px;
+      font: 400 1.5rem "Poppins", sans-serif; }
+    .bonustrack .container-grids {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 2% 0px;
+      grid-auto-flow: row;
+      justify-content: space-evenly;
+      align-content: space-evenly;
+      justify-items: center;
+      align-items: stretch;
+      grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
+      padding: 15%; }
+    .bonustrack .item1 {
+      grid-area: item1; }
+    .bonustrack .item2 {
+      grid-area: item2; }
+    .bonustrack .item3 {
+      grid-area: item3; }
+    .bonustrack .item4 {
+      grid-area: item4; }
+    .bonustrack .item5 {
+      grid-area: item5; }
+    .bonustrack .item6 {
+      grid-area: item6; }
+    .bonustrack .englishLevel, .bonustrack .speaking, .bonustrack .vocabulary, .bonustrack .phrasals, .bonustrack .listening, .bonustrack .reading {
+      text-align: center; } }
 @media only screen and (min-width: 550px) and (max-width: 769px) {
   .container-grids {
     display: grid;
