@@ -73,6 +73,7 @@ body {
     font-size: 1rem;
     padding: 11px 22px; } }
 /*Fonts*/
+/*Transition*/
 /*Colors*/
 @keyframes colores {
   0% {
@@ -109,6 +110,7 @@ header .navbar-brand {
   header .navbar-brand {
     width: 30%; } }
 /*Fonts*/
+/*Transition*/
 /*Colors*/
 @keyframes colores {
   0% {
@@ -155,6 +157,7 @@ main {
     content: "HELLO!";
     font: 200 1.4rem "Poppins", sans-serif; } }
 /*Fonts*/
+/*Transition*/
 /*Colors*/
 @keyframes colores {
   0% {
@@ -266,6 +269,7 @@ body {
     .about .foto-perfil .texto-sobre-mi {
       width: 50%; } }
 /*Fonts*/
+/*Transition*/
 /*Colors*/
 @keyframes colores {
   0% {
@@ -336,7 +340,7 @@ body {
       margin: 40px;
       border-radius: 10px;
       text-align: center;
-      transition: all 1.5s ease; }
+      transition: all 288ms ease; }
       .mis-cursos .texto-derecha .clases-individuales img {
         width: 20%;
         margin-bottom: 10px; }
@@ -346,7 +350,7 @@ body {
       border: 1px solid #000;
       border-radius: 10px;
       text-align: center;
-      transition: all 1.5s ease; }
+      transition: all 288ms ease; }
       .mis-cursos .texto-derecha .clases-grupales img {
         width: 20%;
         margin-bottom: 10px; }
@@ -441,6 +445,7 @@ body {
       font: 300 1.1rem "Poppins", sans-serif;
       padding: 20px 48px; } }
 /*Fonts*/
+/*Transition*/
 /*Colors*/
 @keyframes colores {
   0% {

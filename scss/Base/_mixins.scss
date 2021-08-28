@@ -6,7 +6,6 @@
 
 @mixin condicion-testimonios($bg-color){
     background-color: $bg-color;
-
     @if $bg-color == #a8b2cc {
         color: #000;
     } @else {
