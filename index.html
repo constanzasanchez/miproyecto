@@ -212,27 +212,19 @@
 <!--Finaliza Section BONUS TRACK-->
 <!--Comienza Section Contacto-->
 <section id="contacto" class="contacto">
-<h2>CONTACTO</h2>
-<p>Te invito a conocerme un poco más. Escribime y contame sobre tus objetivos para poder comenzar a trabajarlos juntos/as.</p>
-<form id="contact" class="container p-5 mt-5 mb-5 m-auto">
-    <div class="form-row d-flex justify-content-evenly align-items-center">
-        <div class="col col-3.5 m-1">
-            <input type="text" class="form-control" placeholder="Nombre">
-        </div>
-        <div class="col col-3.5 m-1">
-            <input type="text" class="form-control" placeholder="Apellido">
-        </div>
-        <div class="col col-4.3 m-1">
-            <input type="email" class="form-control" placeholder="Email">
-        </div>
-    </div>
-    <div class="col col-11.8 m-1 mt-2">
-        <input type="text" class="form-control textarea" placeholder="¿En qué puedo ayudarte?">
-    </div>
-    <div class="col mt-1 d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-</form>
+    <h2>CONTACTO</h2>
+    <p>Te invito a conocerme un poco más. Escribime y contame sobre tus objetivos para poder comenzar a trabajarlos juntos/as.</p>
+    <form method="POST" action="enviar2.php">
+        <label for="nombre-usuario">Nombre</label>
+        <input type="text" name="nombre" id="nombre-usuario">
+
+        <label for="email-usuario">Email</label>
+        <input type="email" name="email" id="email-usuario">
+    
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" placeholder="¿En qué puedo ayudarte?" cols="30" rows="10"></textarea>
+    </form>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </section>
 <!--Finaliza Section Contacto-->
 <!--Comienza Footer-->
