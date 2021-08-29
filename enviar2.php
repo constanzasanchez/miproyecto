@@ -1,7 +1,7 @@
 <?php
-$nombre = $_POST ['nombre-usuario']
-$mail = $_POST ['email-usuario']
-$empresa = $_POST ['mensaje']
+$nombre = $_POST ['nombre-usuario'];
+$mail = $_POST ['email-usuario'];
+$empresa = $_POST ['mensaje'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer= PHP/" . phpversion() . " \r\n";
