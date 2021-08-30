@@ -215,16 +215,20 @@
     <h2>CONTACTO</h2>
     <p>Te invito a conocerme un poco más. Escribime y contame sobre tus objetivos para poder comenzar a trabajarlos juntos/as.</p>
     <form method="POST" action="enviar2.php">
-        <label for="nombre-usuario">Nombre</label>
-        <input type="text" name="nombre" id="nombre-usuario">
-
-        <label for="email-usuario">Email</label>
-        <input type="email" name="email" id="email-usuario">
-    
-        <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" id="mensaje" placeholder="¿En qué puedo ayudarte?" cols="30" rows="10"></textarea>
+        <div class="nombre">
+            <label for="nombre-usuario">Nombre</label>
+            <input placeholder="Escribí tu nombre" class="input-nombre" type="text" name="nombre" id="nombre-usuario">
+        </div>
+        <div class="email">
+            <label for="email-usuario">Email</label>
+            <input class="input-email" type="email" name="email" id="email-usuario" placeholder="Escribí tu email">
+        </div>
+        <div class="mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" placeholder="¿En qué puedo ayudarte?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-    <button type="submit" class="btn btn-primary">Enviar</button>
 </section>
 <!--Finaliza Section Contacto-->
 <!--Comienza Footer-->

@@ -36,6 +36,12 @@ html {
   padding: 15px 30px;
   text-align: center; }
 
+.contacto form .nombre .input-nombre, .contacto form .email .input-email, .contacto form .mensaje textarea {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 15px; }
+
 @keyframes colores {
   0% {
     background: #A8B2CC; }
@@ -71,6 +77,7 @@ html {
   width: fit-content; }
 
 .btn:hover {
+  animation-delay: 288ms;
   background-color: #000;
   color: #fff; }
 
@@ -98,6 +105,12 @@ html {
   border-radius: 6px;
   padding: 15px 30px;
   text-align: center; }
+
+.contacto form .nombre .input-nombre, .contacto form .email .input-email, .contacto form .mensaje textarea {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 15px; }
 
 header {
   position: fixed;
@@ -616,24 +629,88 @@ html {
   .englishLevel img, .speaking img, .vocabulary img, .phrasals img, .listening img, .reading img {
     width: 70%;
     margin-bottom: 30px; } }
-.contacto h2 {
-  font: 400 1.8rem "Poppins", sans-serif;
-  text-align: center;
-  margin: 40px 0; }
-.contacto p {
-  font: 300 1.1rem "Poppins", sans-serif;
-  margin: 20px;
+.btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 15px 30px;
   text-align: center; }
-.contacto form {
-  text-align: center; }
-  .contacto form .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    text-align: center; }
-  .contacto form .textarea {
-    height: 100px;
-    text-align: initial; }
 
+.contacto form .nombre .input-nombre, .contacto form .email .input-email, .contacto form .mensaje textarea {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 15px; }
+
+.contacto {
+  background-color: #f0edee;
+  padding: 40px; }
+  .contacto h2 {
+    font: 400 1.8rem "Poppins", sans-serif;
+    text-align: center;
+    margin: 20px 0; }
+  .contacto p {
+    font: 300 1.1rem "Poppins", sans-serif;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px; }
+  .contacto form {
+    margin: 50px auto;
+    padding: 30px 0;
+    width: 50%;
+    background-color: #fff;
+    border: solid 1px #000;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font: 300 1.1rem "Poppins", sans-serif; }
+    .contacto form .nombre, .contacto form .email, .contacto form .mensaje {
+      margin: 10px auto;
+      width: 90%; }
+      .contacto form .nombre label, .contacto form .email label, .contacto form .mensaje label {
+        text-align: start; }
+    .contacto form .nombre .input-nombre {
+      font: 300 1.1rem "Poppins", sans-serif;
+      width: 100%;
+      margin: 20px 0; }
+    .contacto form .email .input-email {
+      font: 300 1.1rem "Poppins", sans-serif;
+      width: 100%;
+      margin: 20px 0; }
+    .contacto form .mensaje textarea {
+      font: 300 1.1rem "Poppins", sans-serif;
+      width: 100%;
+      margin: 20px 0; }
+
+@media only screen and (min-width: 200px) and (max-width: 549px) {
+  .contacto {
+    padding: 15px; }
+    .contacto h2 {
+      font: 400 1.5rem "Poppins", sans-serif; }
+    .contacto p {
+      font: 300 0.9rem "Poppins", sans-serif;
+      margin: 10px; }
+    .contacto form {
+      width: 90%;
+      padding: 10px;
+      font: 300 0.9rem "Poppins", sans-serif; }
+      .contacto form .nombre label, .contacto form .email label, .contacto form .mensaje label {
+        font: 300 0.9rem "Poppins", sans-serif; }
+      .contacto form .nombre .input-nombre {
+        font: 300 0.9rem "Poppins", sans-serif;
+        margin: 15px 0; }
+      .contacto form .email .input-email {
+        font: 300 0.9rem "Poppins", sans-serif;
+        margin: 15px 0; }
+      .contacto form .mensaje textarea {
+        font: 300 0.9rem "Poppins", sans-serif;
+        margin: 15px 0; } }
+@media only screen and (min-width: 550px) and (max-width: 769px) {
+  .contacto form {
+    width: 80%; } }
 footer {
   background-color: #576796;
   padding: 40px 20px;

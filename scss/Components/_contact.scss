@@ -1,19 +1,90 @@
+@import '../Base/extend';
+
 .contacto {
+    background-color: #f0edee;
+    padding: 40px;
     h2 {
         font: $big-subtitle;
         text-align: center;
-        margin: 40px 0;}
+        margin: 20px 0;}
     p {
         font: $big-p;
         margin: 20px;
-        text-align: center;}
+        text-align: center;
+        line-height: 30px;}
     form {
-    text-align: center;
-        .btn {
-            font-size: 0.9rem;
-            padding: 10px 20px;
-            text-align: center;}
-        .textarea {
-            height: 100px;
-            text-align:initial;}
-}}
+        margin: 50px auto;
+        padding: 30px 0;
+        width: 50%;
+        background-color: #fff;
+        border: solid 1px #000;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        font: $big-p;
+        .nombre, .email, .mensaje {
+            margin: 10px auto;
+            width: 90%;
+            label {
+                text-align: start;}}
+        .nombre {
+            .input-nombre {
+                font: $big-p;
+                width: 100%;
+                margin: 20px 0;
+                @extend %caja-input;}}
+        .email {
+            .input-email {
+                font: $big-p;
+                width: 100%;
+                margin: 20px 0;
+                @extend %caja-input;}}
+        .mensaje {
+            textarea {
+                font: $big-p;
+                width: 100%;
+                margin: 20px 0;
+                @extend %caja-input;}}
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:549px) {
+    .contacto {
+        padding: 15px;
+        h2 {
+            font: $small-subtitle;}
+        p {
+            font: $small-p;
+            margin: 10px;}
+        form {
+            width: 90%;
+            padding: 10px;
+            font: $small-p;
+            .nombre, .email, .mensaje {
+                label {
+                    font: $small-p;}}
+        .nombre {
+            .input-nombre {
+                font: $small-p;
+                margin: 15px 0;}}
+        .email {
+            .input-email {
+                font: $small-p;
+                margin: 15px 0;}}
+        .mensaje {
+            textarea {
+                font: $small-p;
+                margin: 15px 0;}}
+    }}
+}
+
+
+@media only screen and (min-width:550px) and (max-width:769px) {
+    .contacto {
+        form {
+            width: 80%;}
+    }
+}
