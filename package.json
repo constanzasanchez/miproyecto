@@ -12,7 +12,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Constanza Sánchez",
   "license": "ISC",
-  "description": ""
+  "description": "¡Hola! Soy Constanza Sánchez, profesora de Inglés. Este es mi sitio web para los que están buscando aprender inglés de manera
+  dinámica. Mis cursos están enfocados en el desarrollo de objetivos específicos."
 }
