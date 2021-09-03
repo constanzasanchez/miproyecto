@@ -36,6 +36,9 @@
 .item6 { grid-area: item6; }
 .englishLevel, .speaking, .vocabulary, .phrasals, .listening, .reading {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     a {
         text-align: center;
         img {

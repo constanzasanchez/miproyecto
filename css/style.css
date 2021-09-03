@@ -552,7 +552,10 @@ html {
   .bonustrack .item6 {
     grid-area: item6; }
   .bonustrack .englishLevel, .bonustrack .speaking, .bonustrack .vocabulary, .bonustrack .phrasals, .bonustrack .listening, .bonustrack .reading {
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .bonustrack .englishLevel a, .bonustrack .speaking a, .bonustrack .vocabulary a, .bonustrack .phrasals a, .bonustrack .listening a, .bonustrack .reading a {
       text-align: center; }
       .bonustrack .englishLevel a img, .bonustrack .speaking a img, .bonustrack .vocabulary a img, .bonustrack .phrasals a img, .bonustrack .listening a img, .bonustrack .reading a img {
